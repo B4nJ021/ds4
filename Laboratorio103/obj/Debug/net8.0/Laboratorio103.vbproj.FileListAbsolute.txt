@@ -1,0 +1,15 @@
+C:\Users\carlo\source\repos\ds4\Laboratorio103\bin\Debug\net8.0\Laboratorio103.exe
+C:\Users\carlo\source\repos\ds4\Laboratorio103\bin\Debug\net8.0\Laboratorio103.deps.json
+C:\Users\carlo\source\repos\ds4\Laboratorio103\bin\Debug\net8.0\Laboratorio103.runtimeconfig.json
+C:\Users\carlo\source\repos\ds4\Laboratorio103\bin\Debug\net8.0\Laboratorio103.dll
+C:\Users\carlo\source\repos\ds4\Laboratorio103\bin\Debug\net8.0\Laboratorio103.pdb
+C:\Users\carlo\source\repos\ds4\Laboratorio103\obj\Debug\net8.0\Laboratorio103.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\carlo\source\repos\ds4\Laboratorio103\obj\Debug\net8.0\Laboratorio103.AssemblyInfoInputs.cache
+C:\Users\carlo\source\repos\ds4\Laboratorio103\obj\Debug\net8.0\Laboratorio103.AssemblyInfo.vb
+C:\Users\carlo\source\repos\ds4\Laboratorio103\obj\Debug\net8.0\Laboratorio103.vbproj.CoreCompileInputs.cache
+C:\Users\carlo\source\repos\ds4\Laboratorio103\obj\Debug\net8.0\Laboratorio103.sourcelink.json
+C:\Users\carlo\source\repos\ds4\Laboratorio103\obj\Debug\net8.0\Laboratorio103.dll
+C:\Users\carlo\source\repos\ds4\Laboratorio103\obj\Debug\net8.0\refint\Laboratorio103.dll
+C:\Users\carlo\source\repos\ds4\Laboratorio103\obj\Debug\net8.0\Laboratorio103.pdb
+C:\Users\carlo\source\repos\ds4\Laboratorio103\obj\Debug\net8.0\Laboratorio103.genruntimeconfig.cache
+C:\Users\carlo\source\repos\ds4\Laboratorio103\obj\Debug\net8.0\ref\Laboratorio103.dll
