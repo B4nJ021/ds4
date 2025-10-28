@@ -1,0 +1,15 @@
+C:\Users\carlo\source\repos\ds4\Laboratorio9\obj\Debug\net8.0\Laboratorio9.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\carlo\source\repos\ds4\Laboratorio9\obj\Debug\net8.0\Laboratorio9.AssemblyInfoInputs.cache
+C:\Users\carlo\source\repos\ds4\Laboratorio9\obj\Debug\net8.0\Laboratorio9.AssemblyInfo.cs
+C:\Users\carlo\source\repos\ds4\Laboratorio9\obj\Debug\net8.0\Laboratorio9.csproj.CoreCompileInputs.cache
+C:\Users\carlo\source\repos\ds4\Laboratorio9\obj\Debug\net8.0\Laboratorio9.sourcelink.json
+C:\Users\carlo\source\repos\ds4\Laboratorio9\bin\Debug\net8.0\Laboratorio9.exe
+C:\Users\carlo\source\repos\ds4\Laboratorio9\bin\Debug\net8.0\Laboratorio9.deps.json
+C:\Users\carlo\source\repos\ds4\Laboratorio9\bin\Debug\net8.0\Laboratorio9.runtimeconfig.json
+C:\Users\carlo\source\repos\ds4\Laboratorio9\bin\Debug\net8.0\Laboratorio9.dll
+C:\Users\carlo\source\repos\ds4\Laboratorio9\bin\Debug\net8.0\Laboratorio9.pdb
+C:\Users\carlo\source\repos\ds4\Laboratorio9\obj\Debug\net8.0\Laboratorio9.dll
+C:\Users\carlo\source\repos\ds4\Laboratorio9\obj\Debug\net8.0\refint\Laboratorio9.dll
+C:\Users\carlo\source\repos\ds4\Laboratorio9\obj\Debug\net8.0\Laboratorio9.pdb
+C:\Users\carlo\source\repos\ds4\Laboratorio9\obj\Debug\net8.0\Laboratorio9.genruntimeconfig.cache
+C:\Users\carlo\source\repos\ds4\Laboratorio9\obj\Debug\net8.0\ref\Laboratorio9.dll
