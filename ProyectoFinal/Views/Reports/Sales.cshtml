@@ -1,0 +1,228 @@
+﻿@model List<ProyectoFinal.Models.GameSales>
+@{
+    ViewBag.Title = "Reporte de Ventas";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <h2>📊 Reporte de Ventas de Videojuegos</h2>
+
+    <div class="filters">
+        @using (Html.BeginForm("Sales", "Reports", FormMethod.Get, new { @class = "filter-form" }))
+        {
+            <div class="filter-group">
+                <label>Juego:</label>
+                @Html.DropDownList("gameId", (SelectList)ViewBag.Games, "Todos los juegos", new { @class = "form-control" })
+            </div>
+
+            <div class="filter-group">
+                <label>Fecha Inicio:</label>
+                <input type="date" name="startDate" class="form-control" />
+            </div>
+
+            <div class="filter-group">
+                <label>Fecha Fin:</label>
+                <input type="date" name="endDate" class="form-control" />
+            </div>
+
+            <button type="submit" class="btn btn-primary">Filtrar</button>
+        }
+    </div>
+
+    <div class="summary-cards">
+        <div class="summary-card">
+            <h3>@ViewBag.TotalCopiesSold</h3>
+            <p>Copias Vendidas</p>
+        </div>
+        <div class="summary-card">
+            <h3>$@ViewBag.TotalRevenue.ToString("N2")</h3>
+            <p>Ingresos Totales</p>
+        </div>
+        <div class="summary-card">
+            <h3>@ViewBag.GameCount</h3>
+            <p>Juegos Diferentes</p>
+        </div>
+    </div>
+
+    <div class="table-container">
+        <table class="sales-table">
+            <thead>
+                <tr>
+                    <th>Juego</th>
+                    <th>Consola</th>
+                    <th>Copias Vendidas</th>
+                    <th>Ingresos</th>
+                    <th>Fecha de Venta</th>
+                    <th>Precio Promedio</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model != null && Model.Count > 0)
+                {
+                    foreach (var sale in Model)
+                    {
+                        var avgPrice = sale.CopiesSold > 0 ? sale.Revenue / sale.CopiesSold : 0;
+                        <tr>
+                            <td>
+                                <a href="@Url.Action("GameDetails", "Reports", new { gameId = sale.GameId })">
+                                    @sale.GameName
+                                </a>
+                            </td>
+                            <td>@sale.Console</td>
+                            <td class="number">@sale.CopiesSold.ToString("N0")</td>
+                            <td class="number">$@sale.Revenue.ToString("N2")</td>
+                            <td>@sale.SaleDate.ToString("dd/MM/yyyy")</td>
+                            <td class="number">$@avgPrice.ToString("N2")</td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="6" class="no-data">No hay datos de ventas disponibles</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<style>
+    .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .filters {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px 0;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .filter-form {
+        display: flex;
+        gap: 15px;
+        align-items: flex-end;
+        flex-wrap: wrap;
+    }
+
+    .filter-group {
+        flex: 1;
+        min-width: 200px;
+    }
+
+        .filter-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+
+    .form-control {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .summary-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        margin: 30px 0;
+    }
+
+    .summary-card {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 30px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+        .summary-card h3 {
+            margin: 0;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .summary-card p {
+            margin: 10px 0 0 0;
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+    .table-container {
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .sales-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+        .sales-table thead {
+            background: #667eea;
+            color: white;
+        }
+
+        .sales-table th {
+            padding: 15px;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .sales-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .sales-table tbody tr:hover {
+            background: #f5f5f5;
+        }
+
+        .sales-table td.number {
+            text-align: right;
+            font-weight: bold;
+        }
+
+        .sales-table td a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+            .sales-table td a:hover {
+                text-decoration: underline;
+            }
+
+    .no-data {
+        text-align: center;
+        color: #999;
+        padding: 40px !important;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .btn-primary {
+        background: #667eea;
+        color: white;
+    }
+
+        .btn-primary:hover {
+            background: #5568d3;
+        }
+</style>
