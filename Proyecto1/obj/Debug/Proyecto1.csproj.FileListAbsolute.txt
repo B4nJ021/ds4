@@ -1,0 +1,11 @@
+C:\Users\carlo\source\repos\ds4\Proyecto1\bin\Debug\Proyecto1.exe.config
+C:\Users\carlo\source\repos\ds4\Proyecto1\bin\Debug\Proyecto1.exe
+C:\Users\carlo\source\repos\ds4\Proyecto1\bin\Debug\Proyecto1.pdb
+C:\Users\carlo\source\repos\ds4\Proyecto1\obj\Debug\Proyecto1.csproj.AssemblyReference.cache
+C:\Users\carlo\source\repos\ds4\Proyecto1\obj\Debug\Proyecto1.Form1.resources
+C:\Users\carlo\source\repos\ds4\Proyecto1\obj\Debug\Proyecto1.Properties.Resources.resources
+C:\Users\carlo\source\repos\ds4\Proyecto1\obj\Debug\Proyecto1.csproj.GenerateResource.cache
+C:\Users\carlo\source\repos\ds4\Proyecto1\obj\Debug\Proyecto1.csproj.CoreCompileInputs.cache
+C:\Users\carlo\source\repos\ds4\Proyecto1\obj\Debug\Proyecto1.exe
+C:\Users\carlo\source\repos\ds4\Proyecto1\obj\Debug\Proyecto1.pdb
+C:\Users\carlo\source\repos\ds4\Proyecto1\obj\Debug\Proyecto1.exe.config
